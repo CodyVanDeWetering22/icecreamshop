@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <Main class="container-fluid">
+        <div class="row">
+            <div class="col-4 text-center cartC border border-2 border-dark mt-1">
+
+                <h2>Cart</h2>
+
+                <div id="cart">
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3> Total: $<span id="cartTotal">0.00</span></h3>
+                    <button onclick="checkout()" class="btn btn-primary fs-4" title="Check out!">Pay Now</button>
+                </div>
+            </div>
+            <div class="col-8">
+                <section class="row">
+                    <div class="col-12">
+                        <h1>Ice Cream</h1>
+                    </div>
+
+                    <div class="col-4 mb-3">
+
+                        <div class="border border-dark border-2 shadow bg-light">
+                            <img src="https://media.istockphoto.com/id/1155405113/photo/white-ice-cream-ball-with-black-cookies-isolated-on-white-background-front-view.webp?b=1&s=170667a&w=0&k=20&c=C_96yPzBD0t9GhHbwxsJ8Pf_YbIzA0dTzUVkJUCyNDc="
+                                alt="icecream">
+                            <p class="fs-4">Cookies Dough</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="fs-4 mb-0">$ 1.25</p>
+                                <button onclick="orderCookieDough()"><i class="mdi mdi-cart-plus"> </i>
+                                </button>
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-4 mb-3">
+
+
+                        <div class="border border-dark border-2 shadow bg-light">
+                            <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dmFuaWxsYSUyMGljZSUyMGNyZWFtfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                alt="icecream">
+                            <p class="fs-4">Vanilla</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="fs-4 mb-0"> $1.25</p>
+                                <button onclick="orderVanilla()"><i class="mdi mdi-cart-plus"> </i>
+                                </button>
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-4 mb-3">
+
+
+                        <div class="border border-dark border-2 shadow bg-light">
+                            <img src="https://media.istockphoto.com/id/479524476/photo/scoop-of-strawberry-ice-cream-from-birds-eye-view.webp?b=1&s=170667a&w=0&k=20&c=mU9veGR0FuXLq_zP34f5JQ0Bu-Ii4JeaMAuu1VVkK_w="
+                                alt="icecream">
+                            <p class="fs-4">Strawberry</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="fs-4 mb-0">$1.25</p>
+                                <button onclick="orderStrawberry()"><i class="mdi mdi-cart-plus"> </i>
+                                </button>
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12">
+                        <h1>Toppings</h1>
+                    </div>
+
+                    <div class="col-4 mb-3">
+
+                        <div class="border border-dark border-2 shadow bg-light">
+                            <img src="https://media.istockphoto.com/id/1155405113/photo/white-ice-cream-ball-with-black-cookies-isolated-on-white-background-front-view.webp?b=1&s=170667a&w=0&k=20&c=C_96yPzBD0t9GhHbwxsJ8Pf_YbIzA0dTzUVkJUCyNDc="
+                                alt="icecream">
+                            <p class="fs-4">Sprinkles</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="fs-4 mb-0">$ .25</p>
+                                <button onclick="orderSprinkles()"><i class="mdi mdi-cart-plus"> </i>
+                                </button>
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-4 mb-3">
+
+                        <div class="border border-dark border-2 shadow bg-light">
+                            <img src="https://media.istockphoto.com/id/1155405113/photo/white-ice-cream-ball-with-black-cookies-isolated-on-white-background-front-view.webp?b=1&s=170667a&w=0&k=20&c=C_96yPzBD0t9GhHbwxsJ8Pf_YbIzA0dTzUVkJUCyNDc="
+                                alt="icecream">
+                            <p class="fs-4">Chocolate Chips</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="fs-4 mb-0">$ .25</p>
+                                <button onclick="orderChocolateChips()"><i class="mdi mdi-cart-plus"> </i>
+                                </button>
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-4 mb-3">
+
+                        <div class="border border-dark border-2 shadow bg-light">
+                            <img src="https://media.istockphoto.com/id/1155405113/photo/white-ice-cream-ball-with-black-cookies-isolated-on-white-background-front-view.webp?b=1&s=170667a&w=0&k=20&c=C_96yPzBD0t9GhHbwxsJ8Pf_YbIzA0dTzUVkJUCyNDc="
+                                alt="icecream">
+                            <p class="fs-4">Cookie Chunks</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="fs-4 mb-0">$ .50</p>
+                                <button onclick="orderCookieChunks()"><i class="mdi mdi-cart-plus"> </i>
+                                </button>
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </section>
+            </div>
+
+        </div>
+
+    </Main>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

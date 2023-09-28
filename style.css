@@ -1,0 +1,13 @@
+img {
+    height: 20vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+body {
+    background-color: bisque;
+}
+
+.cartC {
+    background-color: rgb(245, 227, 205);
+}
